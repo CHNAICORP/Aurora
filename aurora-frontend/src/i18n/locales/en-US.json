@@ -1,0 +1,79 @@
+{
+  "common": {
+    "appName": "Aurora Blog",
+    "home": "Home",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout",
+    "search": "Search",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "more": "More",
+    "loading": "Loading...",
+    "noData": "No data"
+  },
+  "nav": {
+    "home": "Home",
+    "articles": "Articles",
+    "tech": "Technology",
+    "culture": "Culture",
+    "stock": "Stock Market",
+    "crypto": "Cryptocurrency",
+    "gallery": "Gallery",
+    "write": "Write",
+    "userCenter": "User Center"
+  },
+  "category": {
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "algorithm": "Algorithm",
+    "embedded": "Embedded",
+    "hardware": "Hardware",
+    "yijing": "I Ching",
+    "numerology": "Numerology",
+    "astrology": "Astrology",
+    "taoism": "Taoism",
+    "a-shares": "A-Shares",
+    "hk-stocks": "HK Stocks",
+    "us-stocks": "US Stocks",
+    "bitcoin": "Bitcoin",
+    "ethereum": "Ethereum",
+    "blockchain": "Blockchain"
+  },
+  "user": {
+    "username": "Username",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm Password",
+    "profile": "Profile",
+    "settings": "Settings",
+    "favorites": "Favorites",
+    "history": "History",
+    "articles": "My Articles",
+    "followers": "Followers",
+    "following": "Following"
+  },
+  "article": {
+    "title": "Title",
+    "content": "Content",
+    "category": "Category",
+    "tags": "Tags",
+    "publish": "Publish",
+    "draft": "Draft",
+    "views": "Views",
+    "likes": "Likes",
+    "comments": "Comments",
+    "share": "Share",
+    "favorite": "Favorite",
+    "readMore": "Read More"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode",
+    "auto": "Follow System"
+  }
+}

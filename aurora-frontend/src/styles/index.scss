@@ -1,0 +1,191 @@
+// 引入变量和混合
+@import './variables.scss';
+@import './mixins.scss';
+
+// 重置样式
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, 
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  transition: color 0.3s, background-color 0.3s;
+}
+
+// 星空背景
+.starry-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #0a0e27 0%, #1a1e3a 50%, #0a0e27 100%);
+  overflow: hidden;
+  z-index: -1;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background-image: 
+      radial-gradient(1px 1px at 20px 30px, white, transparent),
+      radial-gradient(1px 1px at 40px 70px, white, transparent),
+      radial-gradient(1px 1px at 50px 160px, white, transparent),
+      radial-gradient(1px 1px at 130px 40px, white, transparent),
+      radial-gradient(1px 1px at 200px 80px, white, transparent);
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: move-stars 200s linear infinite;
+    opacity: 0.8;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, transparent 70%);
+  }
+}
+
+@keyframes move-stars {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}
+
+// 滚动条样式
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 4px;
+  
+  &:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
+}
+
+// 选中文本样式
+::selection {
+  background: var(--primary-color);
+  color: white;
+}
+
+// 链接样式
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s;
+  
+  &:hover {
+    color: var(--primary-hover);
+  }
+}
+
+// 卡片样式
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  padding: 24px;
+  transition: all 0.3s;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-hover-shadow);
+  }
+}
+
+// 玻璃态效果
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+}
+
+// 响应式容器
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+  
+  @media (max-width: 768px) {
+    padding: 0 16px;
+  }
+}
+
+// 动画类
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+// Element Plus 主题覆盖
+.el-button--primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  
+  &:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+  }
+}
+
+// 深色模式适配
+.dark {
+  --el-bg-color: var(--bg-color);
+  --el-text-color-primary: var(--text-color);
+  --el-border-color-base: var(--border-color);
+  
+  .el-card {
+    background-color: var(--card-bg);
+  }
+}

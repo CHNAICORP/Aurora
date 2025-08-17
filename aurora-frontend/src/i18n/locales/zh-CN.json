@@ -1,0 +1,79 @@
+{
+  "common": {
+    "appName": "Aurora博客",
+    "home": "首页",
+    "login": "登录",
+    "register": "注册",
+    "logout": "退出登录",
+    "search": "搜索",
+    "submit": "提交",
+    "cancel": "取消",
+    "confirm": "确认",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "more": "更多",
+    "loading": "加载中...",
+    "noData": "暂无数据"
+  },
+  "nav": {
+    "home": "首页",
+    "articles": "文章",
+    "tech": "技术开发",
+    "culture": "国学文化",
+    "stock": "股市投资",
+    "crypto": "虚拟货币",
+    "gallery": "媒体库",
+    "write": "写文章",
+    "userCenter": "个人中心"
+  },
+  "category": {
+    "frontend": "前端开发",
+    "backend": "后端开发",
+    "algorithm": "算法研发",
+    "embedded": "嵌入式开发",
+    "hardware": "硬件开发",
+    "yijing": "易学",
+    "numerology": "命理学",
+    "astrology": "占星学",
+    "taoism": "道家修行",
+    "a-shares": "A股",
+    "hk-stocks": "港股",
+    "us-stocks": "美股",
+    "bitcoin": "比特币",
+    "ethereum": "以太坊",
+    "blockchain": "区块链"
+  },
+  "user": {
+    "username": "用户名",
+    "email": "邮箱",
+    "password": "密码",
+    "confirmPassword": "确认密码",
+    "profile": "个人资料",
+    "settings": "设置",
+    "favorites": "我的收藏",
+    "history": "浏览历史",
+    "articles": "我的文章",
+    "followers": "粉丝",
+    "following": "关注"
+  },
+  "article": {
+    "title": "标题",
+    "content": "内容",
+    "category": "分类",
+    "tags": "标签",
+    "publish": "发布",
+    "draft": "草稿",
+    "views": "阅读",
+    "likes": "点赞",
+    "comments": "评论",
+    "share": "分享",
+    "favorite": "收藏",
+    "readMore": "阅读更多"
+  },
+  "theme": {
+    "light": "浅色模式",
+    "dark": "深色模式",
+    "auto": "跟随系统"
+  }
+}

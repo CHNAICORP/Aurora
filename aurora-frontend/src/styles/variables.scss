@@ -1,0 +1,103 @@
+// 浅色主题
+:root {
+  // 主色调 - 极光紫
+  --primary-color: #6366f1;
+  --primary-hover: #4f46e5;
+  --primary-light: #818cf8;
+  --primary-dark: #4338ca;
+  
+  // 辅助色
+  --success-color: #10b981;
+  --warning-color: #f59e0b;
+  --danger-color: #ef4444;
+  --info-color: #3b82f6;
+  
+  // 背景色
+  --bg-color: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-tertiary: #e2e8f0;
+  
+  // 文字颜色
+  --text-color: #1e293b;
+  --text-secondary: #475569;
+  --text-tertiary: #64748b;
+  --text-light: #94a3b8;
+  
+  // 边框颜色
+  --border-color: #e2e8f0;
+  --border-hover: #cbd5e1;
+  
+  // 卡片
+  --card-bg: rgba(255, 255, 255, 0.9);
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --card-hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  
+  // 玻璃态
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  
+  // 滚动条
+  --scrollbar-track: #f1f5f9;
+  --scrollbar-thumb: #cbd5e1;
+  --scrollbar-thumb-hover: #94a3b8;
+  
+  // 导航栏
+  --nav-bg: rgba(255, 255, 255, 0.8);
+  --nav-text: #1e293b;
+  --nav-hover: #6366f1;
+}
+
+// 深色主题
+.dark {
+  // 主色调 - 极光紫
+  --primary-color: #818cf8;
+  --primary-hover: #a5b4fc;
+  --primary-light: #c7d2fe;
+  --primary-dark: #6366f1;
+  
+  // 辅助色
+  --success-color: #34d399;
+  --warning-color: #fbbf24;
+  --danger-color: #f87171;
+  --info-color: #60a5fa;
+  
+  // 背景色
+  --bg-color: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  
+  // 文字颜色
+  --text-color: #f1f5f9;
+  --text-secondary: #cbd5e1;
+  --text-tertiary: #94a3b8;
+  --text-light: #64748b;
+  
+  // 边框颜色
+  --border-color: #334155;
+  --border-hover: #475569;
+  
+  // 卡片
+  --card-bg: rgba(30, 41, 59, 0.9);
+  --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  --card-hover-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+  
+  // 玻璃态
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(148, 163, 184, 0.2);
+  
+  // 滚动条
+  --scrollbar-track: #1e293b;
+  --scrollbar-thumb: #475569;
+  --scrollbar-thumb-hover: #64748b;
+  
+  // 导航栏
+  --nav-bg: rgba(15, 23, 42, 0.8);
+  --nav-text: #f1f5f9;
+  --nav-hover: #818cf8;
+}
+
+// 响应式断点
+$mobile: 640px;
+$tablet: 768px;
+$desktop: 1024px;
+$wide: 1280px;
